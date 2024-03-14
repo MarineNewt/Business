@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
+import backgroundimg from '@/public/images/background-home.jpg'
 import HomePage from "@/components/HomePage";
 import AddressPage from "@/components/AddressPage";
 import TestemonialSlice from "@/components/TestemonialSlice"
@@ -21,6 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+      <div className={styles.backgroundabs} style={{backgroundImage: `url(${backgroundimg.src})`}}></ div>
         <HomePage />
         <AddressPage />
         <TestemonialSlice/>

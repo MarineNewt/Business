@@ -1,6 +1,8 @@
 .main {
-  height: 100dvh;
+  height: 100vh;
   width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .fullpage{
@@ -10,6 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .fullpagesolid{
   height: 100dvh;
@@ -19,6 +22,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .slicesolid{
   height: 50lvh;
@@ -28,6 +32,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .backgroundabs{
@@ -41,6 +46,19 @@
   align-items: center;
   justify-content: center;
   z-index: -1;
+}
+
+.background{
+  position: absolute;
+  height: 100dvh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
 }
 
 .title{
@@ -123,6 +141,58 @@
   font-size: 16px;
 }
 
+.showcasecontainer{
+  z-index: 1;
+  display: flex;
+}
+.showcaseouter{
+  width: 30vh;
+  height: 75vh;
+  margin-right: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.showcaseouter2{
+  width: 85vh;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.showcaseinner{
+  width: 85vh;
+  height: 20vh;
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcaseblock1{
+  width: 30vh;
+  height: 40vh;
+  background-color: aqua;
+}
+.showcaseblock2{
+  width: 30vh;
+  height: 30vh;
+  background-color: rgb(0, 255, 17);
+}
+.showcaseblock3{
+  width: 40vh;
+  height: 25vh;
+  background-color: rgb(199, 78, 22);
+}
+.showcaseblock4{
+  width: 40vh;
+  height: 25vh;
+  background-color: rgb(224, 244, 10);
+}
+.showcaseblock5{
+  width: 85vh;
+  height: 45vh;
+  background-color: rgb(255, 143, 221);
+}
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {

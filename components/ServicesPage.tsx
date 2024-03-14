@@ -1,8 +1,9 @@
 import styles from '@/styles/Home.module.css'
+import font from '@/components/fonts'
 
 const ServicesPage = ({}: {}) => {
   return (
-    <div className={styles.fullpage2}>
+    <div className={`${styles.fullpagesolid} ${font.className}`}>
       <div>
         <div>
           <h2>Flex</h2>
