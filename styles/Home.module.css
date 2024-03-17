@@ -3,6 +3,7 @@
   width: 100vw;
   overflow-y: scroll;
   overflow-x: hidden;
+  scroll-snap-type: y proximity;
 }
 
 .fullpage{
@@ -13,6 +14,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  scroll-snap-align: start;
 }
 .fullpagesolid{
   height: 100dvh;
@@ -23,6 +25,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  scroll-snap-align: start;
 }
 .slicesolid{
   height: 50lvh;
@@ -33,6 +36,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  scroll-snap-align: start;
 }
 
 .backgroundabs{
@@ -146,22 +150,22 @@
   display: flex;
 }
 .showcaseouter{
-  width: 30vh;
-  height: 75vh;
+  width: 35vh;
+  height: 85vh;
   margin-right: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .showcaseouter2{
-  width: 85vh;
-  height: 75vh;
+  width: 95vh;
+  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .showcaseinner{
-  width: 85vh;
+  width: 95vh;
   height: 20vh;
   margin-bottom: 5vh;
   display: flex;
@@ -169,30 +173,73 @@
 }
 
 .showcaseblock1{
-  width: 30vh;
-  height: 40vh;
-  background-color: aqua;
+  width: 35vh;
+  height: 45vh;
+  border-radius: 20px;
+  box-shadow:  3px 3px 10px #000000;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  opacity: 90%;
+}
+.showcaseblock1:hover{
+ opacity: 100%;
+ transition: 1s;
 }
 .showcaseblock2{
-  width: 30vh;
-  height: 30vh;
-  background-color: rgb(0, 255, 17);
+  width: 35vh;
+  height: 35vh;
+  border-radius: 20px;
+  box-shadow:  3px 3px 10px #000000;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vh;
 }
 .showcaseblock3{
-  width: 40vh;
+  width: 45vh;
   height: 25vh;
-  background-color: rgb(199, 78, 22);
+  border-radius: 20px;
+  box-shadow:  3px 3px 10px #000000;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  opacity: 90%;
 }
+.showcaseblock3:hover{
+  opacity: 100%;
+  transition: 1s;
+ }
 .showcaseblock4{
-  width: 40vh;
+  width: 45vh;
   height: 25vh;
-  background-color: rgb(224, 244, 10);
+  border-radius: 20px;
+  box-shadow:  3px 3px 10px #000000;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  opacity: 90%;
 }
+.showcaseblock4:hover{
+  opacity: 100%;
+  transition: 1s;
+ }
 .showcaseblock5{
-  width: 85vh;
-  height: 45vh;
-  background-color: rgb(255, 143, 221);
+  width: 95vh;
+  height: 55vh;
+  border-radius: 20px;
+  box-shadow:  3px 3px 10px #000000;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  opacity: 90%;
 }
+.showcaseblock5:hover{
+  opacity: 100%;
+  transition: 1s;
+ }
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
