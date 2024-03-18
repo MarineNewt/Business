@@ -95,11 +95,12 @@
   color: #242525;
 }
 .addheading{
+  color: #4B5555;
   font-size: 1.5vw;
+  text-indent: 2rem;
+  line-height: 2.5vw;
   padding-inline: 20vw;
   margin-top: 20px;
-  text-indent: 2rem;
-  color: #4B5555;
 }
 
 .testtitle{
@@ -145,6 +146,7 @@
   font-size: 16px;
 }
 
+/* ShowCase */
 .showcasecontainer{
   z-index: 1;
   display: flex;
@@ -176,70 +178,112 @@
   width: 35vh;
   height: 45vh;
   border-radius: 20px;
-  box-shadow:  3px 3px 10px #000000;
+  box-shadow:  none;
   cursor: pointer;
   background-position: center;
   background-size: cover;
   opacity: 90%;
+  transition: 2s;
 }
 .showcaseblock1:hover{
  opacity: 100%;
+ box-shadow:  3px 3px 10px #000000;
  transition: 1s;
 }
 .showcaseblock2{
   width: 35vh;
   height: 35vh;
   border-radius: 20px;
-  box-shadow:  3px 3px 10px #000000;
+  box-shadow:  none;
   cursor: pointer;
   background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3vh;
+  text-align: center;
+  font-size: 10vh;
 }
 .showcaseblock3{
   width: 45vh;
   height: 25vh;
   border-radius: 20px;
-  box-shadow:  3px 3px 10px #000000;
+  box-shadow:  none;
   cursor: pointer;
   background-position: center;
   background-size: cover;
   opacity: 90%;
+  transition: 2s;
 }
 .showcaseblock3:hover{
   opacity: 100%;
+  box-shadow:  3px 3px 10px #000000;
   transition: 1s;
  }
 .showcaseblock4{
   width: 45vh;
   height: 25vh;
   border-radius: 20px;
-  box-shadow:  3px 3px 10px #000000;
+  box-shadow: none;
   cursor: pointer;
   background-position: center;
   background-size: cover;
   opacity: 90%;
+  transition: 2s;
 }
 .showcaseblock4:hover{
   opacity: 100%;
+  box-shadow:  3px 3px 10px #000000;
   transition: 1s;
  }
 .showcaseblock5{
   width: 95vh;
   height: 55vh;
   border-radius: 20px;
-  box-shadow:  3px 3px 10px #000000;
+  box-shadow:  none;
   cursor: pointer;
   background-position: center;
   background-size: cover;
   opacity: 90%;
+  transition: 2s;
 }
 .showcaseblock5:hover{
   opacity: 100%;
+  box-shadow:  3px 3px 10px #000000;
   transition: 1s;
- }
+}
+
+
+ 
+/* Services */
+.servicescontainer{
+  width:80%;
+  display: flex;
+  justify-content: space-around;
+}
+.servicebox{
+  width: 30vw;
+  padding-block: 20px;
+  padding-inline-start: 30px;
+  padding-inline-end: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.servicetitle{
+  font-size: 2.75vw;
+}
+.serviceinfotext{
+  color: #4B5555;
+  font-size: 1.1vw;
+  text-indent: 1vw;
+}
+.serviceinfotext2{
+  color: #4B5555;
+  font-size: 1.1vw;
+}
+.servicedetails{
+  margin-block: 20px;
+}
+
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {

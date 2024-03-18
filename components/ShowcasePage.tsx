@@ -1,4 +1,5 @@
 import styles from '@/styles/Home.module.css';
+import font from '@/components/fonts'
 import backgroundimg from '@/public/images/background-showcase.jpg';
 import showcaseimg1 from '@/public/images/showcase/showcase1.png';
 import showcaseimg2 from '@/public/images/showcase/showcase4.png';
@@ -13,7 +14,7 @@ const ShowcasePage = ({}: {}) => {
       <div className={styles.showcasecontainer}>
         <div className={styles.showcaseouter}>
           <a className={styles.showcaseblock1} style={{backgroundImage: `url(${showcaseimg1.src})`}} href="https://www.newt9.dev/" target="_blank" rel="noopener noreferrer"></a>
-          <div className={styles.showcaseblock2}>SHOW CASE</div>
+          <div className={`${styles.showcaseblock2} ${font.className}`}>SHOW <br></br> CASE</div>
         </div>
         <div className={styles.showcaseouter2}>
           <div className={styles.showcaseinner}>
