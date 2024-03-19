@@ -1,5 +1,5 @@
 .main {
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -169,6 +169,15 @@
 }
 .plansubtext{
   font-size: 16px;
+}
+.ctaplan{
+  font-size: 1.5vw;
+  background-color: antiquewhite;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 1.1vw;
+  border-radius: 3vw;
+  box-shadow:  5px 5px 10px #000000;
+  transition: 1s;
 }
 
 /* ShowCase */
@@ -359,6 +368,194 @@
 
 /* Mobile */
 @media (max-width: 700px) {
+.fullpagesolid{
+  height: fit-content;
+  min-height: 100dvh;
+}
+.background{
+  height: 100%;
+}
+
+/* Home */
+.title{
+  font-size: 25px;
+  width: 100vw;
+  text-align: center;
+}
+.heading{
+  font-size: 16px;
+  padding-inline: 15vw;
+  width: 100vw;
+  text-align: center;
+}
+.ctabutton{
+  font-size: 5vw;
+  padding: 3vw;
+  border-radius: 8vw;
+}
+
+
+/* Address */
+.addtitle{
+  font-size: 25px;
+  padding-left: 10vw;
+  align-self: start;
+}
+.addheading{
+  font-size: 4.5vw;
+  line-height: normal;
+  padding-inline: 10vw;
+  margin-top: 10px;
+}
+
+/* Testimonials */
+.testtitle{
+  font-size: 4vw;
+  padding-inline: 10vw;
+}
+.testheading{
+  display: none;
+}
+
+/* Plan */
+.plantitle{
+  font-size: 30px;
+  margin-top: 30px;
+}
+.placontainer{
+  flex-direction: column;
+  width: 80vw;
+  margin-bottom: 10px;
+}
+.plansection{
+  width: 100%;
+}
+.planheading{
+  font-size: 22px;
+}
+.planicon{
+  height: 15vw;
+  margin-block: 15px;
+  margin-bottom: 20px;
+}
+.plansubtext{
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+.ctaplan{
+  font-size: 5vw;
+  padding: 3vw;
+  border-radius: 8vw;
+  margin-bottom: 50px;
+}
+
+/* ShowCase */
+.showcasecontainer{
+  flex-direction: column;
+  align-items: center;
+  padding-block: 50px;
+}
+.showcaseouter{
+  width: 100vw;
+  height: auto;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 5vh;
+}
+.showcaseouter2{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.showcaseinner{
+  width: 100vw;
+  height: auto;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  margin-bottom: 5vh;
+}
+
+.showcaseblock1{
+  display: none;
+}
+.showcaseblock2{
+  width: 40vw;
+  height: 40vw;
+}
+.showcaseblock3{
+  width: 45vw;
+  height: 25vw;
+  opacity: 95%;
+}
+.showcaseblock4{
+  width: 45vw;
+  height: 25vw;
+  opacity: 95%;
+}
+.showcaseblock5{
+  width: 90vw;
+  height: 50vw;
+  opacity: 95%;
+}
+
+/* Services */
+.servicescontainer{
+  flex-direction: column;
+  align-items: center;
+}
+.servicestitle{
+  font-size: 30px;
+  margin-block: 30px;
+}
+.servicebox{
+  width: 70vw;
+  padding-block: 10px;
+  padding-inline-start: 15px;
+  padding-inline-end: 10px;
+  margin-bottom: 50px;
+}
+.servicetitle{
+  font-size: 25px;
+}
+.serviceinfotext{
+  text-indent: 1rem;
+  font-size: 12px;
+}
+.servicedetails{
+  margin-block: 20px;
+  line-height: normal;
+}
+.serviceinfotext2{
+  font-size: 11px;
+  line-height: 90%;
+  margin-top: auto;
+}
+
+
+/* FAQ */
+.faqtitle{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.accordion{
+  font-size: 16px;
+  width: 100vw;
+}
+
+
+/* Action */
+.cta{
+  font-size: 5vw;
+  padding: 3vw;
+  padding-inline: 5vw;
+  border-radius: 8vw;
+}
 
 }
 

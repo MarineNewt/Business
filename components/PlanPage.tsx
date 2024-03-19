@@ -25,7 +25,7 @@ const PlanPage = ({}: {}) => {
           <p className={styles.plansubtext}>The finished website will be completely launched for you. You will have full technical support and the opportunity for final revisions for up to 30 days following the date of completion.</p>
         </div>
       </div>
-      <button className={styles.ctabutton}>Get Started</button>
+      <button className={styles.ctaplan}>Get Started</button>
     </div>
   );
 };
