@@ -25,6 +25,7 @@ export default function Home() {
       <div className={styles.backgroundabs} style={{backgroundImage: `url(${backgroundimg.src})`}}></ div>
         <HomePage />
         <AddressPage />
+        <TestemonialSlice/>
         <PlanPage/>
         <ShowcasePage/>
         <ServicesPage/>
