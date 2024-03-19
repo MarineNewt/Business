@@ -29,7 +29,7 @@ export default function Home() {
         <PlanPage/>
         <ShowcasePage/>
         <ServicesPage/>
-        <TrustPage/>
+        {/*<TrustPage/>*/}
         <FAQSlice/>
         <ActionCall/>
       </main>

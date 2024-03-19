@@ -27,11 +27,10 @@ const FAQSlice = ({}: {}) => {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          Question 1
+          What do you need from me to get started?
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          The required materials vary project to project depending on the scope of the website and desired functionality. Commonly requested items include services offered, portfolio images, bios, and information of how you handle client communication.
         </AccordionDetails>
       </Accordion>
       <Accordion className={styles.accordion} expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -40,11 +39,10 @@ const FAQSlice = ({}: {}) => {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          Question 2
+          Will my website be mobile-friendly?
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          Absolutely! All websites will be made dynamically to appear and function across a range of devices including mobile phones.
         </AccordionDetails>
       </Accordion>
       <Accordion className={styles.accordion} expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
@@ -53,11 +51,10 @@ const FAQSlice = ({}: {}) => {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          Question 3
+          Can I update the website myself after it is built?
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          For Flex plans the entirety of the website code will be provided to you allowing for full control of future changes. For Managed plans these changes can be requested and made for you. 
         </AccordionDetails>
       </Accordion>
       <Accordion className={styles.accordion} expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
@@ -66,11 +63,10 @@ const FAQSlice = ({}: {}) => {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          Question 4
+          Can you integrate social media and other 3rd party tools?
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          Of course, if there are 3rd party tools you want visible on your website bring up these features within your application and our discussion then we will be sure to include them in the final product!
         </AccordionDetails>
       </Accordion>
       <Accordion className={styles.accordion} expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
@@ -79,11 +75,10 @@ const FAQSlice = ({}: {}) => {
           aria-controls="panel1-content"
           id="panel1-header"
         >
-          Question 5
+          How long does the process take?
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+          The typical development time of your webstie will be between 3-6 weeks. For short and sweet projects with simple landing pages we aim to deliver even earlier sometimes within just 1 week. During our disscussion a more precise time can be provided once the details of your website are determined.
         </AccordionDetails>
       </Accordion>
       </div>
