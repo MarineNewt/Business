@@ -1,10 +1,13 @@
 import styles from '@/styles/Home.module.css'
 import font from '@/components/fonts'
+import { useRouter } from 'next/navigation'
 import strategylogo from '@/public/images/icons/plan-icon.png'
 import designlogo from '@/public/images/icons/design-icon.png'
 import refinelogo from '@/public/images/icons/refine-icon.png'
 
+
 const PlanPage = ({}: {}) => {
+  const router = useRouter()
   return (
     <div className={`${styles.fullpagesolid} ${font.className}`}>
       <div className={styles.plantitle}>How it works</div>
@@ -25,7 +28,7 @@ const PlanPage = ({}: {}) => {
           <p className={styles.plansubtext}>The finished website will be completely launched for you. You will have full technical support and the opportunity for final revisions for up to 30 days following the date of completion.</p>
         </div>
       </div>
-      <button className={styles.ctaplan}>Get Started</button>
+      <button onClick={() => router.push('/start/plan')} className={styles.ctaplan}>Get Started</button>
     </div>
   );
 };

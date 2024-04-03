@@ -1,12 +1,14 @@
 import styles from '@/styles/Home.module.css'
 import font from '@/components/fonts'
+import { useRouter } from 'next/navigation'
 
 const ServicesPage = ({}: {}) => {
+  const router = useRouter()
   return (
     <div className={`${styles.fullpagesolid} ${font.className}`}>
       <div className={styles.servicestitle}>Services</div>
       <div className={styles.servicescontainer}>
-        <div className={styles.servicebox}>
+        <div onClick={() => router.push('/start/plan')} className={styles.servicebox}>
           <h2 className={styles.servicetitle}>Flex</h2>
           <p className={styles.serviceinfotext}>Starting at 500 USD</p>
           <p className={styles.serviceinfotext}>One time price</p>
@@ -21,7 +23,7 @@ const ServicesPage = ({}: {}) => {
           </div>
           <p className={styles.serviceinfotext2}>*Optimal for established businesses with solidified services and long term goals.</p>
         </div>
-        <div className={styles.servicebox}>
+        <div onClick={() => router.push('/start/plan')} className={styles.servicebox}>
           <h2 className={styles.servicetitle}>Managed</h2>
           <p className={styles.serviceinfotext}>Starting at 350 USD</p>
           <p className={styles.serviceinfotext}> With $12/Mo. subscription</p>
