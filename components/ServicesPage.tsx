@@ -26,7 +26,7 @@ const ServicesPage = ({}: {}) => {
         <div onClick={() => router.push('/start/plan')} className={styles.servicebox}>
           <h2 className={styles.servicetitle}>Managed</h2>
           <p className={styles.serviceinfotext}>Starting at 350 USD</p>
-          <p className={styles.serviceinfotext}> With $12/Mo. subscription</p>
+          <p className={styles.serviceinfotext}> With $15/Mo. subscription</p>
           <div className={styles.servicedetails}>
             <p>● Strategy discussion addressing goals</p>
             <p>● Modern eye-catching website design</p>

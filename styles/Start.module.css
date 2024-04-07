@@ -14,7 +14,6 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  scroll-snap-align: start;
 }
 
 .centercontainer{
@@ -30,7 +29,10 @@
 .actioninterface{
   width: 100%;
   min-height: 50px;
-  background-color: rgb(18, 177, 177);
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10vh;
 }
 
 /* Text */
@@ -38,8 +40,122 @@
   align-self: flex-start;
   margin-top: 50px;
 }
-
 .secondarytext{
   color: rgb(98, 107, 116);
-  margin-top: 25px;
+  margin-top: 15px;
+}
+.planmaintext{
+  font-size: 2vw;
+ /*  color: #015A67; */
+  color: #057785;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+.planaddtext{
+  font-size: 1.2vw;
+  color: rgb(98, 107, 116);
+  align-self: last baseline;
+}
+.planalttext{
+  font-size: 1.25vw;
+  color: slategray;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.datatext{
+  display: flex;
+}
+
+/* Action buttons */
+.planbutton{
+  border: 3px solid #057785;
+  background-color: white;
+  margin-bottom: 10px;
+  padding-block: 2vh;
+  border-radius: 15px;
+}
+.planbutton:hover{
+  border: 3px solid black;
+  background-color: aliceblue;
+}
+.planbutton:hover .planmaintext{
+  color: black;
+}
+.planbutton:hover .planprop{
+  color: black;
+}
+.planbuttonalt{
+  border: 3px solid slategray;
+  background-color: white;
+  margin-bottom: 10px;
+  padding-block: 2vh;
+  border-radius: 10px;
+}
+.planbuttonalt:hover .planalttext{
+  color: black;
+}
+.planbuttonalt:hover{
+  border: 3px solid black;
+}
+.flexrow{
+  display: flex;
+  vertical-align: bottom;
+}
+.planpropertiescontainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1vh;
+}
+.planprop{
+  width: 50%;
+  align-items: flex-start;
+  font-size: 1.1vw;
+  text-align: left;
+  padding-left: 25px;
+  margin-top: 1vh;
+  color: slategray;
+}
+
+.typecontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.typebutton{
+  border: 3px solid #057785;
+  background-color: white;
+  font-size: 1.75vw;
+  font-weight: 600;
+  color: #057785;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47.5%;
+  aspect-ratio: 4;
+  border-radius: 15px;
+  margin-block: 2vh;
+}
+.typebutton:hover{
+  border: 3px solid black;
+  color: black;
+  background-color: aliceblue;
+}
+.typebuttonactive{
+  border: 3px solid black;
+  color: black;
+  background-color: #29a4c3;
+
+  font-size: 1.75vw;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47.5%;
+  aspect-ratio: 4;
+  border-radius: 15px;
+  margin-block: 2vh;
+}
+
+.next{
+  width: 20%;
 }
