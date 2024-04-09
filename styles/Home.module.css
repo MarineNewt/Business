@@ -360,6 +360,11 @@
     scale: 1.05;
     cursor: pointer;
   }
+  .ctaplan:hover{
+    box-shadow:  2px 2px 8px #000000;
+    scale: 1.05;
+    cursor: pointer;
+  }
   .cta:hover{
     box-shadow:  2px 2px 10px #000000;
     scale: 1.05;
