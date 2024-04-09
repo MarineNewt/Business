@@ -15,17 +15,6 @@
   align-items: center;
   position: relative;
 }
-
-.centercontainer{
-  width: 50vw;
-}
-
-/* Stepper */
-.stepcontainer{
-  width: 100%;
-  margin-top: 50px;
-}
-
 .actioninterface{
   width: 100%;
   min-height: 50px;
@@ -34,11 +23,20 @@
   margin-top: 10px;
   margin-bottom: 10vh;
 }
+.centercontainer{
+  min-height: 80%;
+  width: 50vw;
+}
+
+/* Stepper */
+.stepcontainer{
+  width: 50%;
+  margin-block: 5vh;
+}
 
 /* Text */
 .primarytext{
   align-self: flex-start;
-  margin-top: 50px;
 }
 .secondarytext{
   color: rgb(98, 107, 116);
@@ -125,10 +123,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 75%;
 }
 .typebutton{
   border: 3px solid #057785;
-  background-color: white;
+  background-color: #ffffff;
   font-size: 1.75vw;
   font-weight: 600;
   color: #057785;
@@ -205,5 +204,96 @@
   }
   100%{
     opacity: 100%;
+  }
+}
+
+
+/* Large Desktop */
+@media only screen and (min-width: 1526px) {
+  .centercontainer{
+    min-height: 80%;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .typecontainer{
+    width: 60%;
+  }
+  .typebutton{
+    font-size: 1.3vw;
+  }
+  .typebuttonactive{
+    font-size: 1.3vw;
+  }
+  .backicon{
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    rotate: 90deg;
+    width: 4vw;
+    height: 4vw;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+  .backicon{
+    top: 4vw;
+    left: 4vw;
+    rotate: 90deg;
+    width: 12vw;
+    height: 12vw;
+  }  
+  .stepcontainer{
+    width: 60%;
+    margin-block: 3vh;
+  }
+  .centercontainer{
+    min-height: 80%;
+    width: 90vw;
+  }
+  .typecontainer{
+    width: 80%;
+  }
+  .typebutton{
+    font-size: 3vw;
+    border-radius: 10px;
+    margin-block: 1vh;
+  }
+  .typebuttonactive{
+    font-size: 3vw;
+    border-radius: 10px;
+    margin-block: 1vh;
+  }
+  .planmaintext{
+    font-size: 6vw;
+  }
+  .planaddtext{
+    font-size: 3vw;
+  }
+  .planalttext{
+    font-size: 3.75vw;
+  }
+  .planprop{
+    width: 100%;
+    font-size: 3.2vw;
+    padding-left: 15px;
+  }
+  .next{
+    width: 25%;
+  }
+  .submissionheading{
+    margin-block: 15px;
+    font-size: 8vw;
+  }
+  .submissiontext{
+    width: 90%;
+    text-align: center;
+  }
+  .submissionicon{
+    width: 17vw;
+    height: 17vw;
   }
 }

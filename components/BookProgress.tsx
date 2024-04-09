@@ -42,18 +42,17 @@ const BookProgress = ({progress}: {progress: number}) => {
   return (
     <div className={`${styles.fullpage} ${font.className}`}>
       <ExpandCircleDownOutlinedIcon onClick={() => {setActiveStep(activeStep-1)}} className={styles.backicon} style={{display: (activeStep > 0 && activeStep < 4)? "" : "none"}} />
+      <Stepper className={styles.stepcontainer} activeStep={activeStep}>
+        {steps.map((label, index) => {
+          return (
+            <Step key={index} >
+              <StepLabel>{label}</StepLabel>
+            </Step>
+          );
+        })}
+      </Stepper>
+   
       {activeStep == 0 && <div className={styles.centercontainer}>
-        <div className={styles.stepcontainer}>
-          <Stepper activeStep={activeStep}>
-            {steps.map((label, index) => {
-              return (
-                <Step key={index} >
-                  <StepLabel>{label}</StepLabel>
-                </Step>
-              );
-            })}
-          </Stepper>
-        </div>
         <h1 className={styles.primarytext}>Let's get started!</h1>
         <h3 className={styles.secondarytext}> Do you have a website plan in mind? </h3>
         <div className={styles.actioninterface}> 
@@ -63,17 +62,6 @@ const BookProgress = ({progress}: {progress: number}) => {
         </div>
       </div>}
       {activeStep == 1 && <div className={styles.centercontainer}>
-        <div className={styles.stepcontainer}>
-          <Stepper activeStep={activeStep}>
-            {steps.map((label, index) => {
-              return (
-                <Step key={index} >
-                  <StepLabel>{label}</StepLabel>
-                </Step>
-              );
-            })}
-          </Stepper>
-        </div>
         <h1 className={styles.primarytext}>{dataPlan == "Undecided" ? "No probelm," : `Great, we will discuss a ${dataPlan} plan.`}</h1>
         <h3 className={styles.secondarytext}> Let's get your contact information. </h3>
         <div className={styles.actioninterface}> 
@@ -91,17 +79,6 @@ const BookProgress = ({progress}: {progress: number}) => {
         </div>
       </div>}
       {activeStep == 2 && <div className={styles.centercontainer}>
-        <div className={styles.stepcontainer}>
-          <Stepper activeStep={activeStep}>
-            {steps.map((label, index) => {
-              return (
-                <Step key={index} >
-                  <StepLabel>{label}</StepLabel>
-                </Step>
-              );
-            })}
-          </Stepper>
-        </div>
         <h1 className={styles.primarytext}> Thank you, {dataName}.</h1>
         <h3 className={styles.secondarytext}> Now about your business and website... </h3>
         <div className={styles.actioninterface}> 
@@ -118,17 +95,6 @@ const BookProgress = ({progress}: {progress: number}) => {
         </div>
       </div>}
       {activeStep == 3 && <div className={styles.centercontainer}>
-        <div className={styles.stepcontainer}>
-          <Stepper activeStep={activeStep}>
-            {steps.map((label, index) => {
-              return (
-                <Step key={index} >
-                  <StepLabel>{label}</StepLabel>
-                </Step>
-              );
-            })}
-          </Stepper>
-        </div>
         <h1 className={styles.primarytext}>Perfect!</h1>
         <h3 className={styles.secondarytext}> Before submitting, review your infomation below. </h3>
         <div className={styles.actioninterface}> 
@@ -143,17 +109,6 @@ const BookProgress = ({progress}: {progress: number}) => {
         </div>
       </div>}
       {activeStep == 4 && <div className={styles.centercontainer}>
-        <div className={styles.stepcontainer}>
-          <Stepper activeStep={activeStep}>
-            {steps.map((label, index) => {
-              return (
-                <Step key={index} >
-                  <StepLabel>{label}</StepLabel>
-                </Step>
-              );
-            })}
-          </Stepper>
-        </div>
         <div className={styles.submissioncontainer}>
           <CheckCircleRoundedIcon className={styles.submissionicon}/>
           <h1 className={styles.submissionheading}>Submission recieved!</h1>
