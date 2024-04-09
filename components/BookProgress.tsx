@@ -53,17 +53,17 @@ const BookProgress = ({progress}: {progress: number}) => {
       </Stepper>
    
       {activeStep == 0 && <div className={styles.centercontainer}>
-        <h1 className={styles.primarytext}>Let's get started!</h1>
+        <h1 className={styles.primarytext}>Let&apos;s get started!</h1>
         <h3 className={styles.secondarytext}> Do you have a website plan in mind? </h3>
         <div className={styles.actioninterface}> 
           <button onClick={() => {setDataPlan("Flex"); setActiveStep(1)}} className={styles.planbutton}> <div className={styles.flexrow}><h2 className={styles.planmaintext}>Flex</h2><p className={styles.planaddtext}>╺Starting at 350 with $15/mo subscription</p></div> <div className={styles.planpropertiescontainer}><h4 className={styles.planprop}>● Strategy discussion addressing goals.</h4><h4 className={styles.planprop}>● Website launch at your desired domain.</h4><h4 className={styles.planprop}>● A change each month to update services.</h4><h4 className={styles.planprop}>● Continuous website support.</h4></div> </button>
           <button onClick={() => {setDataPlan("Managed"); setActiveStep(1)}} className={styles.planbutton}> <div className={styles.flexrow}><h2 className={styles.planmaintext}>Managed</h2><p className={styles.planaddtext}>╺Starting at 500</p></div> <div className={styles.planpropertiescontainer}><h4 className={styles.planprop}>● Strategy discussion addressing goals.</h4><h4 className={styles.planprop}>● Website launch at your desired domain.</h4><h4 className={styles.planprop}>● Set up host accounts.</h4><h4 className={styles.planprop}>● All website code provided.</h4></div> </button>
-          <button onClick={() => {setDataPlan("Undecided"); setActiveStep(1)}} className={styles.planbuttonalt}> <div className={styles.flexrow}><h4 className={styles.planalttext}>I'm not sure.</h4></div> </button>
+          <button onClick={() => {setDataPlan("Undecided"); setActiveStep(1)}} className={styles.planbuttonalt}> <div className={styles.flexrow}><h4 className={styles.planalttext}>I&apos;m not sure.</h4></div> </button>
         </div>
       </div>}
       {activeStep == 1 && <div className={styles.centercontainer}>
         <h1 className={styles.primarytext}>{dataPlan == "Undecided" ? "No probelm," : `Great, we will discuss a ${dataPlan} plan.`}</h1>
-        <h3 className={styles.secondarytext}> Let's get your contact information. </h3>
+        <h3 className={styles.secondarytext}> Let&apos;s get your contact information. </h3>
         <div className={styles.actioninterface}> 
           <TextField onChange={(event) => {setDataName(event.target.value)}} id="outlined-size-small" label="Name" size="small" style={{width: '50%', marginBlock: "10px"}} />
           <TextField onChange={(event) => {setDataNumber(event.target.value)}} id="outlined-size-small" label="Number" size="small" style={{width: '50%', marginBlock: "10px"}} />
