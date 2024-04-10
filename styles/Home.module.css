@@ -102,6 +102,7 @@
 }
 .ctabutton{
   font-size: 1.5vw;
+  color: #000000;
   background-color: antiquewhite;
   border: 3px solid rgb(0, 0, 0);
   padding: 1.1vw;
@@ -172,6 +173,7 @@
 }
 .ctaplan{
   font-size: 1.5vw;
+  color: #000000;
   background-color: antiquewhite;
   border: 3px solid rgb(0, 0, 0);
   padding: 1.1vw;
@@ -304,11 +306,6 @@
   background-color: rgb(240, 215, 180);
   transition: 1s;
 }
-.servicebox:hover{
-  transition: 1s;
-  scale: 1.1;
-  cursor: pointer;
- }
 .servicetitle{
   font-size: 2.75vw;
 }
@@ -343,6 +340,7 @@
 .cta{
   z-index: 1;
   font-size: 2vw;
+  color: #000000;
   background-color: antiquewhite;
   border: 3px solid rgb(0, 0, 0);
   padding: 1.2vw;
@@ -369,6 +367,12 @@
     box-shadow:  2px 2px 10px #000000;
     scale: 1.05;
   }
+
+  .servicebox:hover{
+    transition: 1s;
+    scale: 1.1;
+    cursor: pointer;
+   }
 }
 
 /* Mobile */
@@ -485,7 +489,6 @@
   margin: 0;
   margin-bottom: 5vh;
 }
-
 .showcaseblock1{
   display: none;
 }

@@ -112,7 +112,7 @@ const BookProgress = ({progress}: {progress: number}) => {
         <div className={styles.submissioncontainer}>
           <CheckCircleRoundedIcon className={styles.submissionicon}/>
           <h1 className={styles.submissionheading}>Submission recieved!</h1>
-          <h3 className={styles.submissiontext}> Thank you for your request, you will recieve a message soon via your preffered contact method.</h3>
+          <h3 className={styles.submissiontext}> Thank you for your request, you will recieve a message soon via your preferred contact method.</h3>
         </div>
       </div>}
     </div>
